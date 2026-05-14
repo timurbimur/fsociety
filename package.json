@@ -1,0 +1,27 @@
+{
+  "name": "cipher-ai-trader",
+  "version": "1.0.0",
+  "description": "AI-powered crypto trading desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.cipher.aitrader",
+    "productName": "FSOCIETY AI Trader",
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    },
+    "files": ["main.js", "src/**/*", "assets/**/*", "node_modules/**/*", ".env"]
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "electron": "^28.0.0",
+    "node-fetch": "^2.6.9"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+# NEVER upload these
+.env
+trades.json
+alerts.json
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+dist/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
